@@ -6,6 +6,12 @@ A simple application to quickly setup settings files without too
 much hassle.
 
 
+Installation
+-------------
+``pip install django-skeleton-setup``
+
+
+
 Quick start
 -----------
 
