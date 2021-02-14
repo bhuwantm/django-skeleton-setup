@@ -1,4 +1,4 @@
 include LICENSE
 include README.rst
 recursive-include docs *
-recursive-include skeleton_setup/*
+recursive-include skeleton_setup *

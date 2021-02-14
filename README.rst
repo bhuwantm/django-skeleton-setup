@@ -35,7 +35,7 @@ Quick start
 
 5. Add following line to end of settings.py file
 
-    ``from settings_common import *``
+    ``from .settings_common import *``
 
 
 6. Edit settings files as per your requirements
