@@ -38,4 +38,14 @@ Quick start
     ``from .settings_common import *``
 
 
-6. Edit settings files as per your requirements
+6. Database setup is based on postgres, if other database is used then to avoid runserver error
+
+    ``change DATABASES dict as required``
+
+
+7. Change the following env file for local development
+
+    ``env_local.env``
+
+
+7. Edit env files or settings files as per your requirements
