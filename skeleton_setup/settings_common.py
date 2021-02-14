@@ -116,10 +116,10 @@ for each in ENV_LIST_BOOL:
         init_bool = True
 
 if IS_PROD:
-    pass
+    from .settings_production import *
 
 if IS_LOCAL:
-    pass
+    from .settings_local import *
 """
 END OF ENVIRONMENT SELECTION AND CORRESPONDING FILE LOADING
 """
