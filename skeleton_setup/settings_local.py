@@ -38,6 +38,6 @@ CORS_ORIGIN_ALLOW_ALL = True
 # AutoBackend added which always login the first user in the User table
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
-    'skeleton_setups.backends.EmailBackend',
-    'skeleton_setups.backends.AutoBackend'
+    'skeleton_setup.backends.EmailBackend',
+    'skeleton_setup.backends.AutoBackend'
 ]

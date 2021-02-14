@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class SkeletonSetupConfig(AppConfig):
-    name = 'skeleton_setups'
+    name = 'skeleton_setup'
