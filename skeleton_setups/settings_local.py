@@ -13,7 +13,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-# DB settings
+# DB settings, CHANGE RECOMMENDED
 DB_NAME = env('DB_NAME')
 DB_USER = env('DB_USER')
 DB_PASS = env('DB_PASS')
@@ -38,6 +38,6 @@ CORS_ORIGIN_ALLOW_ALL = True
 # AutoBackend added which always login the first user in the User table
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
-    'skeleton_setup.backends.EmailBackend',
-    'skeleton_setup.backends.AutoBackend'
+    'skeleton_setups.backends.EmailBackend',
+    'skeleton_setups.backends.AutoBackend'
 ]

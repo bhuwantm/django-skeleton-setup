@@ -12,7 +12,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = env('ALLOWED_HOSTS')
 
-# DB settings
+# DB settings, CHANGE RECOMMENDED
 DB_NAME = env('DB_NAME')
 DB_USER = env('DB_USER')
 DB_PASS = env('DB_PASS')
