@@ -27,6 +27,7 @@ Quick start
    * settings_common.py
    * settings_local.py
    * settings_production.py
+   * env_local.env
 
 5. Add following line to end of settings.py file
    from settings_common import *
