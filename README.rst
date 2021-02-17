@@ -5,6 +5,10 @@ SKELETON SETUPS
 A simple application to quickly setup settings files without too
 much hassle.
 
+Installation
+-------------
+``pip install django-skeleton-setup``
+
 
 Configure Settings and Environment Files
 -----------------------------------------
@@ -80,4 +84,4 @@ Don't like app structure provided by this?
 
 4. If you still want to have finer control over the app creation. Extend the following class:
 
-    sleleton_startapp.Command
+    skeleton_startapp.Command
