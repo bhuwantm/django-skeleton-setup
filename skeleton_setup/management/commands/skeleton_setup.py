@@ -4,9 +4,7 @@ from django.core import management
 
 
 class Command(management.BaseCommand):
-    """
-    Command to copy all settings files from this app to main app
-    """
+    help = 'Copies settings files to main app and local env file to base directory.'
 
     def add_arguments(self, parser):
         pass
