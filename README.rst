@@ -7,7 +7,7 @@ much hassle.
 
 Installation
 -------------
-``pip install django-skeleton-setup``
+    ``pip install django-skeleton-setup``
 
 
 Configure Settings and Environment Files
