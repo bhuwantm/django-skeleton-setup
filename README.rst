@@ -69,6 +69,32 @@ Creating a new app provided by skeleton setup
 3. Parameter "to_path" is optional and is path string value relative to BASE_DIR where
    you want to create the app
 
+4. App with following structure will be created::
+
+    ├── api
+    │   ├── __init__.py
+    │   ├── urls.py
+    │   └── views.py
+    ├── migrations
+    │   └── __init__.py
+    ├── serializers
+    │   └── __init__.py
+    ├── services
+    │   └── __init__.py
+    ├── templates
+    ├── tests
+    │   └── __init__.py
+    ├── __init__.py
+    ├── admin.py
+    ├── apps.py
+    ├── forms.py
+    ├── model_managers.py
+    ├── models.py
+    ├── signals.py
+    └── urls.py
+    └── utils.py
+    └── views.py
+
 
 Don't like app structure provided by this?
 --------------------------------------------
@@ -78,10 +104,62 @@ Don't like app structure provided by this?
 2. Create a template structure for your application.
    Use `"*.py-tpl"` instead of ``"*.py"`` files.
 
-3. Add following variable to settings.py
+3. Example template::
+
+    ├── api
+    │   ├── __init__.py-tpl
+    │   ├── urls.py
+    │   └── views.py
+    ├── migrations
+    │   └── __init__.py-tpl
+    ├── tests
+    │   └── __init__.py-tpl
+    ├── utils
+    │   └── __init__.py-tpl
+    ├── static
+    │   └── assets
+    │   └── js
+    │   └── css
+    ├── templates
+    ├── admin.py-tpl
+    ├── apps.py-tpl
+    ├── models.py-tpl
+    └── urls.py
+    └── views.py-tpl
+
+
+4. Add following variable to settings.py
 
     ``SKELETON_STARTAPP_SOURCE="path/to/your/template/"``
 
-4. If you still want to have finer control over the app creation. Extend the following class:
+5. If you still want to have finer control over the app creation. Extend the following class:
 
     skeleton_startapp.Command
+
+
+
+
+Creating a user app
+----------------------
+
+DEPENDENCIES: djangorestframework
+
+Creates an app for handling users.
+
+1. Command similar to startapp of django-admin
+
+    ``python manage.py skeleton_startuserapp app_name to_path``
+
+2. The command prompts for::
+
+    UserModel [Suggestion: UpperCamelCase]
+
+    db_table [Suggestion: snake_case] [Optional]
+
+3. An app is created with given app_name
+
+3. Modify the app as required
+
+4. Add it to INSTALLED_APPS in settings.py
+
+5. Make migrations and migrate
