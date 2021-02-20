@@ -124,7 +124,7 @@ Don't like app structure provided by this?
     ├── admin.py-tpl
     ├── apps.py-tpl
     ├── models.py-tpl
-    └── urls.py
+    └── urls.py-tpl
     └── views.py-tpl
 
 
