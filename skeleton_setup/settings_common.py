@@ -58,16 +58,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
     {
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
-    },
-    {
-        'NAME': 'users.validators.NumberValidator',
-    },
-    {
-        'NAME': 'users.validators.UppercaseValidator',
-    },
-    {
-        'NAME': 'users.validators.SymbolValidator',
-    },
+    }
 ]
 
 # EMAIL SETTINGS, remove if not required
@@ -108,8 +99,8 @@ IS_LOCAL = True
 
 # ensures that only one env bool value is true
 ENV_LIST_BOOL = [IS_PROD, IS_LOCAL]
+init_bool = False
 for each in ENV_LIST_BOOL:
-    init_bool = False
     if each and init_bool:
         raise ValueError('Repeat value for env bool detected.')
     elif each and not init_bool:
