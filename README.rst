@@ -132,7 +132,12 @@ Don't like app structure provided by this?
 
     ``SKELETON_STARTAPP_SOURCE="path/to/your/template/"``
 
-5. If you still want to have finer control over the app creation. Extend the following class:
+
+5. Now run the command
+
+    ``python manage.py skeleton_startapp app_name to_path``
+
+6. If you still want to have finer control over the app creation. Extend the following class:
 
     skeleton_startapp.Command
 
