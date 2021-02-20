@@ -37,13 +37,13 @@ class Command(skeleton_startapp.Command):
     def handle(self, *args, **options):
         try:
             while self.model_name is None:
-                self.model_name = input("Model name (UpperCamelCase): ")
+                self.model_name = input("User model name (UpperCamelCase): ")
                 if not self.model_name:
                     self.stderr.write("Model name is required and cannot be blank.")
                     self.model_name = None
 
             while self.model_table is None:
-                self.model_table = input("Model name (UpperCamelCase) [Optional]: ")
+                self.model_table = input("Table name for user model (snake_case) [Optional]: ")
 
         except KeyboardInterrupt:
             self.stderr.write("\nOperation cancelled.")
